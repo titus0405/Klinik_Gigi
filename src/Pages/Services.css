@@ -1,0 +1,109 @@
+.services_container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.services_container h2 {
+  width: 90%;
+  color: #232323;
+  font-size: 27px;
+}
+.services_header {
+  margin: 30px;
+}
+.services_container h2 span {
+  margin-right: 9px;
+}
+.service_info_container {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.service_image_details {
+  width: 306px;
+  height: 139px;
+  filter: invert(66%) sepia(40%) saturate(493%) hue-rotate(86deg)
+    brightness(92%) contrast(88%);
+}
+.service_info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 270px;
+  width: 350px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 25px 0 #babababf;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+  background: transparent;
+  backdrop-filter: blur(4px);
+}
+.service_info:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.service_info:active {
+  transform: scale(0.97);
+}
+.service_detail_info {
+  font-size: 18px;
+  padding: 0 15px 0 15px;
+  margin-bottom: 0px;
+  line-height: 1.7;
+  color: #344c5d;
+}
+
+@media screen and (min-width: 1024px) {
+  .service_info {
+    width: 430px;
+    height: 272px;
+    justify-content: center;
+  }
+  .service_info_container {
+    gap: 33px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .service_info_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-items: stretch;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 0px;
+  }
+  .service_info {
+    width: 382px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .service_info {
+    width: 90%;
+    height: 312px;
+  }
+  .service_detail_info {
+    width: 72%;
+  }
+  .services_header {
+    margin-top: 42px;
+    margin-bottom: 45px;
+  }
+  .service_info_container {
+    height: 100%;
+  }
+}

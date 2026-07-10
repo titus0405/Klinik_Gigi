@@ -1,0 +1,91 @@
+.top-banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(90deg, #020b31, #19407b);
+  color: #fff;
+  font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+.top-banner__bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.1);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.top-banner__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 7px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.top-banner__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.top-banner__item svg {
+  opacity: 0.9;
+}
+
+.top-banner__emergency {
+  font-weight: 600;
+}
+
+.top-banner__rating {
+  color: #ffd84d;
+}
+
+.top-banner__stars {
+  display: inline-flex;
+  gap: 2px;
+}
+
+@media (max-width: 768px) {
+  .top-banner__bg-text {
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+  .top-banner__inner {
+    font-size: 11px;
+    padding: 6px 12px;
+    gap: 10px;
+  }
+  .top-banner__emergency span {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-banner__bg-text {
+    font-size: 18px;
+  }
+  .top-banner__inner {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .top-banner__emergency {
+    display: none;
+  }
+}

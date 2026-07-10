@@ -1,0 +1,231 @@
+#home {
+  padding: 0 0 10px 0;
+}
+
+/* ===== Hero banner slider ===== */
+.hero_slider {
+  width: 100%;
+  position: relative;
+}
+
+.hero_slider .carousel,
+.hero_slider .carousel-inner,
+.hero_slider .carousel-item {
+  height: 72vh;
+  min-height: 460px;
+}
+
+.hero_slide {
+  width: 100%;
+  height: 100%;
+  background: #020b31;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero_slide__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero_slide__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 11, 49, 0.85),
+    rgba(25, 64, 123, 0.55)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_slide__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+  max-width: 760px;
+}
+
+.hero_slide__title {
+  font-size: 51px;
+  margin: 0 0 14px;
+  line-height: 1.15;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.hero_slide__text {
+  font-size: 20px;
+  margin: 0 0 26px;
+  color: #eef3fb;
+}
+
+.hero_slide__btn {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(135deg, #2c3d99, #2d68c0);
+  color: #fff;
+  padding: 13px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 8px 22px rgba(44, 61, 153, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero_slide__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(44, 61, 153, 0.55);
+  color: #fff;
+}
+
+/* ===== Clinic info ===== */
+.clinic_info {
+  width: 95%;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+  margin: 10px 15px 10px 15px;
+  justify-content: center;
+}
+
+.clinic_container {
+  display: flex;
+}
+
+.basic_info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  flex-direction: column;
+  color: #fff;
+  padding: 15px 20px;
+  width: 80%;
+  height: 240px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px #3a3939;
+}
+
+#info_01 {
+  background-color: #2c3d99;
+}
+#info_02 {
+  background-color: #2d68c0;
+}
+#info_03 {
+  background-color: #19407b;
+}
+
+.transperent_btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 45px;
+  color: antiquewhite;
+  width: 164px;
+  outline: 1px solid white;
+  justify-content: center;
+  align-content: center;
+  line-height: 24px;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 #fff;
+  transition: ease-in-out 0.3s;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+}
+
+.transperent_btn:hover {
+  color: black;
+  outline: 1px solid #fff;
+  box-shadow: inset 164px 0 0 0 #fff;
+}
+
+.transperent_btn:active {
+  transform: scale(0.9);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#tr_btn_01 {
+  width: 214px;
+  line-height: 24px;
+}
+
+#tr_btn_01:hover {
+  box-shadow: inset 214px 0 0 0 #fff;
+}
+
+.slick-slide img {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+}
+
+.imgslider {
+  width: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+  .basic_info {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .clinic_info {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero_slider .carousel,
+  .hero_slider .carousel-inner,
+  .hero_slider .carousel-item {
+    height: 60vh;
+    min-height: 380px;
+  }
+  .hero_slide__title {
+    font-size: 34px;
+  }
+  .hero_slide__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero_slide__title {
+    font-size: 26px;
+  }
+  .clinic_info {
+    width: 100%;
+    flex-direction: column;
+    margin: 30px 0px 40px 0px;
+  }
+  .basic_info {
+    height: 260px;
+    width: 90%;
+    box-shadow: 0px 0px 2px #3a3939;
+  }
+  .transperent_btn {
+    color: #000;
+    outline: 1px solid #000;
+  }
+  #info_01,
+  #info_02 {
+    background-color: #ffffff;
+    color: #000;
+  }
+  #info_03 {
+    display: none;
+  }
+}

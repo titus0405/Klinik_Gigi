@@ -1,0 +1,61 @@
+.wa-button {
+  position: fixed;
+  right: 200px;
+  bottom: 22px;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  background: #25d366;
+  color: #fff;
+  padding: 10px 16px 10px 12px;
+  border-radius: 30px;
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.45);
+  font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wa-button:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(37, 211, 102, 0.55);
+}
+
+.wa-button svg {
+  flex-shrink: 0;
+}
+
+.wa-button__label {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.wa-button__label strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.wa-button__label small {
+  font-size: 11px;
+  font-weight: 500;
+  opacity: 0.92;
+}
+
+@media (max-width: 600px) {
+  .wa-button {
+    right: 16px;
+    bottom: auto;
+    top: 16px;
+    padding: 9px 12px;
+  }
+  .wa-button__label strong {
+    font-size: 12px;
+  }
+  .wa-button__label small {
+    font-size: 10px;
+  }
+}

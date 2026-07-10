@@ -1,0 +1,366 @@
+.booking_section_container {
+  width: 100%;
+  display: flex;
+  position: absolute;
+}
+.in__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  color: #e1dddd;
+}
+.in__container label {
+  padding-left: 3px;
+}
+
+::placeholder {
+  color: #6a6a6a !important;
+}
+input[type='date'] {
+  background: transparent;
+  color: white;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
+.bsc_lower {
+  background-color: #131324;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.bsc_lower_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 573px;
+}
+.bsc_lower_evening_container,
+.bsc_lower_morning_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.me_slot_selection {
+  display: flex;
+  padding: 20px 15px 15px 15px;
+  background: #332144;
+}
+.md_data,
+.ed_data {
+  width: 100px;
+  height: 45px;
+  margin: 8px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #fff;
+  border: 1px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+  font-weight: 500;
+  font-family: 'Poppins';
+}
+.md_data:active,
+.ed_data:active {
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+.md_data:hover,
+.ed_data:hover {
+  color: #fff;
+  background-color: green;
+  border: 2px solid green;
+}
+.md_data:active,
+.ed_data:active {
+  background-color: green;
+}
+.bsc_header_info {
+  background: #e0e0e0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 72px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.morning_info_container,
+.evening_info_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.bsc_lower_evening_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.booking_c_btn {
+  position: sticky;
+  width: 345px;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  margin-top: 20px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.booking_c_btn:hover {
+  color: #fff;
+  background-color: #0792e0;
+}
+
+.submit_btn:active {
+  transform: scale(0.97);
+}
+.submit_slot_btn {
+  display: flex;
+  width: 570px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.submit_slot_btn:active {
+  transform: scale(0.97);
+}
+.bsc_lower_container span {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.appointment_hours_form {
+  /* background-color: #00000076; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 400px;
+}
+.bsc_header {
+  width: 413px;
+}
+.booking_c_btn span {
+  margin: 0 !important;
+  font-size: 15px !important;
+}
+.form_for_booking {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 5rem;
+  height: 573px;
+  border-radius: 0;
+  background: #5f606121;
+  border-bottom: 7px solid white;
+}
+form {
+  background: none;
+  border-bottom: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.submit_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 45px;
+  background: green;
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: 600;
+}
+.form_for_booking input {
+  padding: 1rem;
+  border: none;
+  color: #6a6a6a !important;
+  border-radius: 0.4rem;
+  border: 1px solid #8b8b8ba1;
+  width: 100%;
+  font-size: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .bsc_lower {
+    background-color: #131324;
+  }
+  .booking_section_container {
+    height: 100%;
+  }
+  .bsc_lower_container {
+    width: 1000px;
+  }
+  .bsc_header,
+  .appointment_hours_form {
+    width: 384px;
+  }
+  .me_slot_selection {
+    width: 616px;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .form_for_booking {
+    background: #2a2a2a70;
+    padding: 1rem 2rem !important;
+    gap: 1.5rem !important;
+  }
+  .booking_c_btn {
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
+  .morning_info_container,
+  .evening_info_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .bsc_lower_container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .bsc_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .appointment_hours_form,
+  .bsc_header {
+    width: 450px;
+  }
+  .me_slot_selection {
+    flex-direction: column;
+    width: 450px;
+  }
+  .bsc_lower_morning_container,
+  .bsc_lower_evening_container {
+    height: 441px;
+  }
+  .morning_info_container,
+  .evening_info_container {
+    width: 450px;
+  }
+  .booking_c_btn {
+    margin: 0;
+  }
+  .bsc_lower_evening_container {
+    justify-content: center;
+  }
+  .bsc_lower_container {
+    border-radius: 10px;
+    height: 100%;
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .submit_slot_btn {
+    width: 469px;
+    margin-top: 20px;
+  }
+  .bsc_lower_container span {
+    font-size: 22px;
+    margin-bottom: 17px;
+  }
+  .form_for_booking {
+    height: 100%;
+    padding: 40px 35px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .appointment_hours_form {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .bsc_lower_container {
+    width: 90%;
+  }
+  .bsc_header {
+    width: 100%;
+    backdrop-filter: blur(0px);
+  }
+  .me_slot_selection {
+    width: 100%;
+  }
+  .morning_info_container,
+  .evening_info_container {
+    width: 100%;
+  }
+  .submit_slot_btn {
+    width: 90%;
+  }
+  hr {
+    display: flex;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .bsc_lower_morning_container,
+  .bsc_lower_evening_container {
+    height: 100%;
+  }
+  .md_data,
+  .ed_data {
+    margin: 3px;
+    margin-top: 6px;
+  }
+  .morning_info_container {
+    margin-bottom: 20px;
+  }
+  .evening_info_container {
+    margin-top: 20px;
+  }
+  .bsc_lower_container {
+    margin-top: 34px;
+  }
+}
