@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ec8ec1eb.css",
+    "main.js": "/static/js/main.423d188c.js",
+    "static/media/vid1.mp4": "/static/media/vid1.844d948eb05e23bbf3b9.mp4",
+    "static/media/vid2.mp4": "/static/media/vid2.9df6dce4a0a8c381f1ae.mp4",
+    "static/media/vid3.mp4": "/static/media/vid3.7bd1e86c34022885cd02.mp4",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/female_profile_img.png": "/static/media/female_profile_img.856a900828755c4fc4d3.png",
+    "static/media/male_profile_img.png": "/static/media/male_profile_img.743ca5921201744a7b98.png",
+    "static/media/about_img.webp": "/static/media/about_img.13bb375245f1a0305283.webp",
+    "static/media/Bot.svg": "/static/media/Bot.1579ca6aeb9d9cf8840938946190c9c0.svg",
+    "static/media/logo.png": "/static/media/logo.2efc83f79afd85b3a388.png",
+    "static/media/footer_01.jpg": "/static/media/footer_01.8278da38b973ab9088fa.jpg",
+    "static/media/site_con.jpg": "/static/media/site_con.e7a6921b6a59c7cefc56.jpg",
+    "static/media/appointment_admin_img.png": "/static/media/appointment_admin_img.ead77caea6d44a2ccc4f.png",
+    "index.html": "/index.html",
+    "main.ec8ec1eb.css.map": "/static/css/main.ec8ec1eb.css.map",
+    "main.423d188c.js.map": "/static/js/main.423d188c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec8ec1eb.css",
+    "static/js/main.423d188c.js"
+  ]
+}

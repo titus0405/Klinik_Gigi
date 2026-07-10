@@ -7,7 +7,7 @@ const Appointment = () => {
     setTimeout(() => {
       navigate("/dental-clinic/slot");
     }, 4000);
-  }, []);
+  }, [navigate]);
   return (
     <>
       <div className="app_container">
